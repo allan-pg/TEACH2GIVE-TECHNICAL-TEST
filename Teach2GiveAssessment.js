@@ -17,10 +17,10 @@ for (let i = 1; i <= 100; i++) {
 // Question 2: Fibonacci Sequence
 // Write a program to generate the Fibonacci sequence up to 100. 
 
-let a = 0, b = 1;
+let a = 0;
+let b = 1;
 
 console.log(a); 
-
 while (b <= 100) { 
   console.log(b); 
   let nextNum = a + b; 
@@ -31,17 +31,14 @@ while (b <= 100) {
 // Write a program that takes an integer as input and returns true if the input is a power of two.  
 
 function isPowerOfTwo(n) {
-  
+
   if (n <= 0) {
     return false;
   }
 
-  
   while (n % 2 === 0) {
     n = n / 2; 
   }
-
-  
   return n === 1;
 
 // Question 4: Capitalize Words 
@@ -90,12 +87,9 @@ For input 91, the program should return 19.
 
 function reverseInteger(num) {
     
-    let isNegative = num < 0;
-
+    let negativeNum = num < 0;
     let positiveNum = Math.abs(num);
-    
     let numStr = positiveNum.toString();
-  
     let reversedStr = '';
   
     for (let i = numStr.length - 1; i >= 0; i--) {
@@ -104,12 +98,9 @@ function reverseInteger(num) {
 
     
     let reversedNum = parseInt(reversedStr, 10);
-
-    
-    if (isNegative) {
+    if (negativeNum) {
         reversedNum = -reversedNum;
     }
-
     return reversedNum;
 }
 
@@ -121,7 +112,6 @@ eg " Hello World " => returns 2
 
 function countVowels(sentence) {
     let vowels = "aeiouAEIOU";
-
     let count = 0;
 
     for (let i = 0; i < sentence.length; i++) {
