@@ -17,7 +17,8 @@ for (let i = 1; i <= 100; i++) {
   }
 }
 ```
-<!-- 2. Write a program to generate the Fibonacci sequence up to 100. -->
+### Question 2: Fibonacci Sequence
+- Write a program to generate the Fibonacci sequence up to 100. 
 
 ```javascript
 let a = 0, b = 1;
@@ -32,9 +33,8 @@ while (b <= 100) {
 }
 ```
 
-<!-- Question 3: Power of Two  
-Write a program that takes an integer as input and returns true if the input is a power of two. -->
-
+### Question 3: Power of Two  
+- Write a program that takes an integer as input and returns true if the input is a power of two. -->
 
 ```javascript
 function isPowerOfTwo(n) {
